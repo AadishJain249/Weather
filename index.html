@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="weather.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+
+    <link rel="shortcut icon" href="../Captures/weather_icon.png" type="image/x-icon">
+</head>
+
+<body>
+    <main>
+
+        <div class="slide-in" id="slide">
+            <h1>Search Weather</h1>
+            <br>
+            <div class="d">
+                <input id="input" type="text" placeholder="City, State"><button type="submit" id="searchWeather"><i class="fas fa-search" id="searchWeather"></i></button>
+            </div>
+            <br><br>
+            <span id="isValid"></span>
+        </div>
+
+        <div class="image">
+
+            <div id="w-img">
+                <img id="img">
+            </div>
+
+
+            <div id="w-data">
+
+                <div class="first">
+                    <span id="degree"></span>
+                    <h1 id="city"></h1>
+                    <p id="des"></p>
+                </div>
+
+                <div class="second">
+                    <p id="wind"></p>
+                    <p id="press"></p>
+                    <p id="humidity"></p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+    <button id="toggle"><i class="fas fa-search"></i></button>
+
+</body>
+
+<script src="weather.js"></script>
+
+</html>
